@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10172D" />
+      <stop offset="45%" stop-color="#252744" />
+      <stop offset="100%" stop-color="#6E3D34" />
+    </linearGradient>
+    <linearGradient id="glow5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF2D6" />
+      <stop offset="60%" stop-color="#F5C86A" />
+      <stop offset="100%" stop-color="#EBA75E" />
+    </linearGradient>
+    <filter id="infinityGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="600" height="750" fill="url(#bg5)" rx="24" />
+
+  <!-- Eternal bond infinity & warm star symbol -->
+  <g transform="translate(300, 275)">
+    <!-- Infinity loop -->
+    <path d="M-60,0 C-95,-35 -95,35 -60,0 C-25,-35 25,35 60,0 C95,-35 95,35 60,0 C25,-35 -25,35 -60,0 Z" 
+          fill="none" stroke="url(#glow5)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" filter="url(#infinityGlow)" />
+    
+    <!-- Central warm heart -->
+    <path d="M0,20 C-15,5 -18,-10 -7,-16 C0,-19 0,-10 0,-10 C0,-10 0,-19 7,-16 C18,-10 15,5 0,20 Z" 
+          fill="#FAF0E1" />
+
+    <!-- Radiant orbit dots -->
+    <circle cx="-60" cy="0" r="4" fill="#F5C86A" />
+    <circle cx="60" cy="0" r="4" fill="#F5C86A" />
+    <circle cx="0" cy="-70" r="2.5" fill="#C8A8FF" />
+    <circle cx="90" cy="-60" r="3" fill="#FFF2D6" />
+    <circle cx="-90" cy="60" r="2.5" fill="#EBA75E" />
+  </g>
+
+  <!-- Bottom card -->
+  <rect x="60" y="520" width="480" height="150" rx="16" fill="#171D35" opacity="0.85" stroke="#F5C86A" stroke-width="1.5" stroke-opacity="0.3" />
+  <text x="300" y="575" fill="#F5C86A" font-family="'Cormorant Garamond', Georgia, serif" font-size="28" font-weight="600" text-anchor="middle" letter-spacing="1">
+    A MEMORY I’LL ALWAYS KEEP
+  </text>
+  <text x="300" y="615" fill="#FAF0E1" font-family="'Inter', sans-serif" font-size="15" text-anchor="middle" opacity="0.85">
+    “A quiet moment of care frozen in time forever”
+  </text>
+  <text x="300" y="645" fill="#C8A8FF" font-family="'Caveat', cursive" font-size="18" text-anchor="middle">
+    Drop a heartfelt photo here (memory-5.jpg)
+  </text>
+</svg>

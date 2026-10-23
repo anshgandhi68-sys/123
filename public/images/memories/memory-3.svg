@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10172D" />
+      <stop offset="50%" stop-color="#1A2D42" />
+      <stop offset="100%" stop-color="#4A312B" />
+    </linearGradient>
+    <linearGradient id="warmLight3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5E0" />
+      <stop offset="50%" stop-color="#F5C86A" />
+      <stop offset="100%" stop-color="#EBA75E" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="750" fill="url(#bg3)" rx="24" />
+
+  <!-- Childhood elements: paper plane flying to the stars, nostalgic sun & tree -->
+  <g transform="translate(300, 280)">
+    <!-- Golden path / loop -->
+    <path d="M-140,80 C-40,110 50,40 10,-30 C-30,-90 60,-120 120,-80" 
+          fill="none" stroke="#F5C86A" stroke-width="2" stroke-dasharray="6 6" opacity="0.6" />
+    
+    <!-- Paper airplane -->
+    <g transform="translate(120, -80) rotate(-35)">
+      <polygon points="0,0 -40,-15 -25,0 -40,15" fill="url(#warmLight3)" />
+      <polygon points="0,0 -40,-15 -25,0" fill="#FFF5E0" opacity="0.6" />
+      <line x1="-25" y1="0" x2="0" y2="0" stroke="#8F5146" stroke-width="1.5" />
+    </g>
+
+    <!-- Nostalgic glowing star cluster -->
+    <circle cx="-140" cy="80" r="16" fill="#F5C86A" opacity="0.4" />
+    <circle cx="-140" cy="80" r="8" fill="#FFF5E0" />
+    <circle cx="-60" cy="-60" r="5" fill="#C8A8FF" />
+    <circle cx="40" cy="90" r="6" fill="#FAF0E1" />
+  </g>
+
+  <!-- Bottom card -->
+  <rect x="60" y="520" width="480" height="150" rx="16" fill="#171D35" opacity="0.85" stroke="#F5C86A" stroke-width="1.5" stroke-opacity="0.3" />
+  <text x="300" y="575" fill="#F5C86A" font-family="'Cormorant Garamond', Georgia, serif" font-size="28" font-weight="600" text-anchor="middle" letter-spacing="1">
+    LITTLE CHILDHOOD MEMORIES
+  </text>
+  <text x="300" y="615" fill="#FAF0E1" font-family="'Inter', sans-serif" font-size="15" text-anchor="middle" opacity="0.85">
+    “Growing up together, innocent fights, and shared mischief”
+  </text>
+  <text x="300" y="645" fill="#C8A8FF" font-family="'Caveat', cursive" font-size="18" text-anchor="middle">
+    Drop a childhood photo here (memory-3.jpg)
+  </text>
+</svg>

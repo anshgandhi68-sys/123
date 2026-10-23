@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10172D" />
+      <stop offset="50%" stop-color="#252744" />
+      <stop offset="100%" stop-color="#8F5146" />
+    </linearGradient>
+    <linearGradient id="goldGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF2D6" />
+      <stop offset="50%" stop-color="#F5C86A" />
+      <stop offset="100%" stop-color="#EBA75E" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="750" fill="url(#bg1)" rx="24" />
+
+  <!-- Subtle starfield -->
+  <g fill="#FAF0E1" opacity="0.4">
+    <circle cx="80" cy="90" r="1.5" />
+    <circle cx="520" cy="140" r="2" />
+    <circle cx="150" cy="220" r="1.5" />
+    <circle cx="480" cy="300" r="2.5" />
+    <circle cx="100" cy="500" r="1.5" />
+    <circle cx="510" cy="620" r="2" />
+    <circle cx="280" cy="110" r="1.5" />
+  </g>
+
+  <!-- Moon / celestial halo -->
+  <circle cx="300" cy="300" r="140" fill="none" stroke="url(#goldGlow)" stroke-width="2" stroke-dasharray="8 6" opacity="0.5" />
+  <circle cx="300" cy="300" r="110" fill="url(#goldGlow)" opacity="0.15" filter="url(#softGlow)" />
+
+  <!-- Central Heart & Constellation -->
+  <g transform="translate(300, 290)">
+    <!-- Heart outline -->
+    <path d="M0,45 C-70,-15 -85,-75 -35,-105 C-5,-120 0,-75 0,-75 C0,-75 5,-120 35,-105 C85,-75 70,-15 0,45 Z" 
+          fill="url(#goldGlow)" opacity="0.85" filter="url(#softGlow)" />
+    <!-- Golden sparkles -->
+    <path d="M0,-140 L4,-125 L19,-121 L4,-117 L0,-102 L-4,-117 L-19,-121 L-4,-125 Z" fill="#FFF2D6" />
+    <path d="M-110,30 L-107,40 L-97,43 L-107,46 L-110,56 L-113,46 L-123,43 L-113,40 Z" fill="#F5C86A" />
+    <path d="M120,-30 L123,-20 L133,-17 L123,-14 L120,-4 L117,-14 L107,-17 L117,-20 Z" fill="#C8A8FF" />
+  </g>
+
+  <!-- Polaroid-style aesthetic badge -->
+  <rect x="60" y="520" width="480" height="150" rx="16" fill="#171D35" opacity="0.85" stroke="#F5C86A" stroke-width="1.5" stroke-opacity="0.3" />
+  <text x="300" y="575" fill="#F5C86A" font-family="'Cormorant Garamond', Georgia, serif" font-size="28" font-weight="600" text-anchor="middle" letter-spacing="1">
+    MY FAVOURITE MEMORY
+  </text>
+  <text x="300" y="615" fill="#FAF0E1" font-family="'Inter', sans-serif" font-size="15" text-anchor="middle" opacity="0.85">
+    “Little moments, endless memories. ♡”
+  </text>
+  <text x="300" y="645" fill="#C8A8FF" font-family="'Caveat', cursive" font-size="18" text-anchor="middle">
+    Drop your favourite photo here (memory-1.jpg)
+  </text>
+</svg>
